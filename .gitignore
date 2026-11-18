@@ -1,5 +1,8 @@
-# Data never goes in the repo (public sources; see README)
-data/
+# Data never goes in the repo (public sources; see README).
+# The folder skeleton and its READMEs are tracked so users know where files go.
+data/**
+!data/**/
+!data/**/README.md
 *.csv
 *.dta
 *.sas7bdat

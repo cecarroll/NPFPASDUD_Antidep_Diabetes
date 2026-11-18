@@ -70,7 +70,7 @@ Every script sources `R/00_config.R`, so there are no machine-specific paths. Pu
 
 ## Data
 
-No data are committed. Everything used is public:
+No data are committed, but the folder structure is: see [`data/README.md`](data/README.md) for exactly where each file goes. Everything used is public:
 
 | Source | Used for | Get it |
 |---|---|---|
