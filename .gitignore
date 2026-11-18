@@ -1,0 +1,30 @@
+# Data never goes in the repo (public sources; see README)
+data/
+*.csv
+*.dta
+*.sas7bdat
+*.sas7bcat
+*.xlsx
+*.zip
+*.parquet
+
+# Outputs are regenerated
+output/
+
+# R session files
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+.Rdata
+
+# SAS / Stata logs
+*.log
+*.lst
+*.smcl
+*.stswp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
