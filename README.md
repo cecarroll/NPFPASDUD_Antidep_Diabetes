@@ -88,7 +88,7 @@ The full SDUD extract is about 50 GB uncompressed, so the R build processes it i
 
 - The manuscript's reported estimates come from the Stata implementation (`did_imputation`, `csdid`) run on the 2009–2019 per-1,000-enrollee panel. `14_robustness.R` is the R implementation of that same specification set. Run on the same panel, it should reproduce Table 2 up to bootstrap noise. Confirming that match is the next step.
 - `10_` and `11_` are the earlier exploratory R analysis: raw script counts, 2010–2020, with covariates. They are kept for transparency and are not the paper's specification.
-- Known issue to revisit: in `08_filter_drug_classes.R`, the bare match terms `"regular"` and `"nph"` (insulin families) can match unrelated product names. The manuscript's dictionary uses exact product names instead.
+- **Fixed (Nov 2026):** `08_filter_drug_classes.R` matched combination products on their component names, so every plain metformin fill was also written into each metformin-combo file. In 2019, for example, the Janumet file had 39,906 rows when only 2,745 were Janumet. Combos now match on brand name only, and the bare insulin terms `"regular"` and `"nph"` were tightened. Drug-class files built before this fix should be regenerated. None of this affected the manuscript's estimates, which use a separate exact-name dictionary.
 
 ## Authors
 

@@ -90,30 +90,30 @@ drug_lists <- list(
   c("insulins", "insulin_aspart", "aspart", "novolog", "fiasp"),
   c("insulins", "insulin_lispro", "lispro", "humalog", "admelog", "lyumjev"),
   c("insulins", "insulin_glulisine", "glulisine", "apidra"),
-  c("insulins", "insulin_regular", "regular", "humulin r", "novolin r"),
-  c("insulins", "insulin_nph", "nph", "humulin n", "novolin n"),
+  c("insulins", "insulin_regular", "insulin re", "humulin r", "novolin r"),
+  c("insulins", "insulin_nph", "insulin np", "isophane", "humulin n", "novolin n"),
   c("insulins", "insulin_detemir", "detemir", "levemir"),
   c("insulins", "insulin_glargine", "glargine", "lantus", "basaglar", "toujeo", "semglee", "rezvoglar"),
   c("insulins", "insulin_degludec", "degludec", "tresiba"),
   
-  # Combo diabetes products (they’ll match on brand AND component strings)
-  c("combo_diabetes", "janumet", "janumet", "sitagliptin", "metformin"),
-  c("combo_diabetes", "jentadueto", "jentadueto", "linagliptin", "metformin"),
-  c("combo_diabetes", "kombiglyze", "kombiglyze", "saxagliptin", "metformin"),
-  c("combo_diabetes", "kazano", "kazano", "alogliptin", "metformin"),
-  c("combo_diabetes", "synjardy", "synjardy", "empagliflozin", "metformin"),
-  c("combo_diabetes", "xigduo", "xigduo", "dapagliflozin", "metformin"),
-  c("combo_diabetes", "invokamet", "invokamet", "canagliflozin", "metformin"),
-  #drug_lists <- list(
-  c("combo_diabetes", "segromet", "segromet", "ertugliflozin", "metformin"),
+  # Combo diabetes products: match on BRAND NAME ONLY. Matching on component
+  # names (e.g. "metformin") pulled every single-agent fill into each combo file.
+  c("combo_diabetes", "janumet", "janumet"),
+  c("combo_diabetes", "jentadueto", "jentadueto"),
+  c("combo_diabetes", "kombiglyze", "kombiglyze"),
+  c("combo_diabetes", "kazano", "kazano"),
+  c("combo_diabetes", "synjardy", "synjardy"),
+  c("combo_diabetes", "xigduo", "xigduo"),
+  c("combo_diabetes", "invokamet", "invokamet"),
+  c("combo_diabetes", "segromet", "segromet"),
   
-  c("combo_diabetes", "actoplus", "actoplus", "pioglitazone", "metformin"),
-  c("combo_diabetes", "avandamet", "avandamet", "rosiglitazone", "metformin"),
-  c("combo_diabetes", "xultophy", "xultophy", "degludec", "liraglutide"),
-  c("combo_diabetes", "soliqua", "soliqua", "glargine", "lixisenatide"),
-  c("combo_diabetes", "glyxambi", "glyxambi", "empagliflozin", "linagliptin"),
-  c("combo_diabetes", "qtern", "qtern", "dapagliflozin", "saxagliptin"),
-  c("combo_diabetes", "steglujan", "steglujan", "ertugliflozin", "sitagliptin"),
+  c("combo_diabetes", "actoplus", "actoplus"),
+  c("combo_diabetes", "avandamet", "avandamet"),
+  c("combo_diabetes", "xultophy", "xultophy"),
+  c("combo_diabetes", "soliqua", "soliqua"),
+  c("combo_diabetes", "glyxambi", "glyxambi"),
+  c("combo_diabetes", "qtern", "qtern"),
+  c("combo_diabetes", "steglujan", "steglujan"),
   
   # =========================
   # Mental health medications
